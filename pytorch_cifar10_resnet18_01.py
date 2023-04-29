@@ -84,7 +84,7 @@ def train(epoch):
                 loss.div_(math.ceil(float(len(data)) / args.batch_size))
                 loss.backward()
                 if hvd.rank() == 1:
-                    time.sleep(0.09)
+                    time.sleep(0.2116)
 
             # Gradient is applied across all ranks
             optimizer.step()
