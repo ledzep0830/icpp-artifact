@@ -27,6 +27,14 @@ Move `icpp-artifact` inside `/data/horovod/examples/pytorch/`
 ```
 mv <path to icpp-artifact> /data/horovod/examples/pytorch/
 ```
+Make directory `signal` and `straggler`
+* `signal` is where normal worker process set job saves signal text file to notify straggler job to save current model and be ready to synchronize
+* `straggler` is where straggler job saves current model when notified by normal worker process job to stop training
+```
+cd /data/horovod/examples/pytorch/icpp-artifact
+mkdir signal
+mkdir straggler
+```
 
 ## Experiments
 * All experiments are performed on nodes configured with 4 GPUs each.
