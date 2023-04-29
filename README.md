@@ -91,4 +91,5 @@ tensorboard --logdir=/data/horovod/examples/pytorch/icpp-artifact/logs --port=60
 ```
 
 ## Figures
-[See `icpp2023-figs.ipynb`.](https://github.com/ledzep0830/icpp-artifact/blob/main/icpp2023-figs.ipynb)
+* Tensorboard is used to extract data as can be seen from the commands above.
+* [See `icpp2023-figs.ipynb` for details.](https://github.com/ledzep0830/icpp-artifact/blob/main/icpp2023-figs.ipynb)
