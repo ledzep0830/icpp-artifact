@@ -89,3 +89,6 @@ tensorboard --logdir=/data/horovod/examples/pytorch/icpp-artifact/logs --port=60
 # The proposed method
 tensorboard --logdir=/data/horovod/examples/pytorch/icpp-artifact/logs --port=6022 & horovodrun -np 4 -H localhost:4 python3 pytorch_cifar10_resnet18_proposed_01.py
 ```
+
+## Figures
+[See `icpp2023-figs.ipynb`.](https://github.com/ledzep0830/icpp-artifact/blob/main/icpp2023-figs.ipynb)
